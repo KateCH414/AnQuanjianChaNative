@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/iconshop"
+            android:layout_marginLeft="11dp"
+            android:id="@+id/iv"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺名称"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:id="@+id/tv_ckeckPending_shopName"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的店铺"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收货"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:textColor="#C81623"
+
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/view_separator"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:id="@+id/item_shop"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊敬的客户，您的商品已经在配送途中"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#333333"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_checkPending_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_checkPeding_time"
+            android:text="2017-05-15 15:45"
+            android:textSize="12sp"
+            android:layout_below="@id/tv_checkPending_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrowrightward"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <include layout="@layout/view_separator"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/rv_CheckPending_Image"
+            />
+    </LinearLayout>
+    <include layout="@layout/view_separator"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款："
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            android:id="@+id/yv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#C81623"
+            android:id="@+id/tv_checkPending_realPay"
+            android:text="¥1000"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/yv"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:text="去支付"
+            android:textColor="#C81623"
+            android:textSize="15sp"
+            android:id="@+id/bt_checkPending_buyAgain"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_checkpending_buyagain"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

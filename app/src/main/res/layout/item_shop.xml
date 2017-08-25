@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/sku_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/sku_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_pic" />
+
+        <TextView
+            android:id="@+id/no_sku"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="25dp"
+            android:background="#7000"
+            android:gravity="center"
+            android:text="@string/no_sku_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sku_fl"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/sku_name"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+        <com.jd.yyc.widget.PriceView
+            android:id="@+id/price_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#ECECEE" />
+
+        <TextView
+            android:id="@+id/sku_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:drawableLeft="@drawable/shop_avatar"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/sku_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

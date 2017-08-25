@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/id_text1"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送数据序列"/>
+    <EditText
+        android:text="1100111010110111"
+        android:layout_alignParentRight="true"
+        android:layout_width="260dp"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/id_text2"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带有校验码的发送序列"/>
+        <EditText
+            android:text="1100111010110111001111011111"
+            android:layout_alignParentRight="true"
+            android:layout_width="160dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/id_text3"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正确结果"/>
+        <EditText
+            android:text="1100111010110111001111011111"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/id_text4"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离散一位错误"/>
+
+        <EditText
+            android:text="1100100100000111001111011111"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/id_text5"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离散两位错误"/>
+        <EditText
+            android:layout_alignParentRight="true"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/id_text7"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="长度超过12"/>
+        <EditText
+            android:text="1011111010110111001111011111"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

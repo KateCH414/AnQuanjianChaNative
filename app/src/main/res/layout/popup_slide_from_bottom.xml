@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/popup_anima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <TextView
+                android:id="@+id/tx_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|left"
+                android:lines="2"
+                tools:text="asdsdasdsdsfdsfdscvdddsfdsdsdddddd"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tx_title"
+                android:layout_below="@id/tx_title"
+                android:layout_marginTop="10dp"
+                android:text="批发价"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tx_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/pifa"
+                android:text="32"
+                android:textColor="#C81623"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+
+        <View style="@style/line_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tx_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="库存数量"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View style="@style/line_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            >
+
+            <TextView
+                android:id="@+id/tx_3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="购买数量"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sub_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/sku_num"
+                android:src="@drawable/sub_icon" />
+
+            <EditText
+                android:id="@+id/sku_num"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/plus_icon"
+                android:background="@drawable/sku_num_bg"
+                android:digits="1234567890"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/word_big"
+                android:textSize="@dimen/text_body" />
+
+            <ImageView
+                android:id="@+id/plus_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/plus_icon" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#C81623"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/sku_pic_bg"
+        android:padding="0.5dp" />
+</RelativeLayout>
+
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/rl_time"
+        android:visibility="gone"
+        android:background="#FCDDD9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#C81623"
+            android:textSize="14sp"
+            android:id="@+id/tv_time" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/close"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/close_time" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_below="@id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/fragment_swipe_recyclerview" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:visibility="gone"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="195dp">
+
+            <TextView
+                android:id="@+id/st_txt"
+                android:textSize="@dimen/text_body"
+                android:textColor="#333333"
+                android:text="开始时间"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/st_tv"
+                android:background="@drawable/ic_nonthpay_time_bg"
+                android:textSize="@dimen/text_body"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:hint="年月日"
+                android:layout_alignTop="@id/st_txt"
+                android:layout_toRightOf="@id/st_txt"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/et_txt"
+                android:layout_below="@id/st_txt"
+                android:textSize="@dimen/text_body"
+                android:text="结束时间"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/et_tv"
+                android:background="@drawable/ic_nonthpay_time_bg"
+                android:textSize="@dimen/text_body"
+                android:gravity="center"
+                android:hint="年月日"
+                android:textColor="#999999"
+                android:layout_alignTop="@id/et_txt"
+                android:layout_toRightOf="@id/et_txt"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/et_txt"
+                android:layout_marginTop="20dp"
+                android:text="确定"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:background="@drawable/ic_nonthpay_timebutton_bg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/black"
+            android:alpha="0.4"
+            android:id="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

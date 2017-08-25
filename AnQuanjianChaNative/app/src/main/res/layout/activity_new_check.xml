@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_new_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/string_new_check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_toolbar"
+        android:background="@color/colorGrayBackground">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/id_tv_hint_newcheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_hint_newcheck"/>
+        <LinearLayout
+            android:id="@+id/id_ln_dept_newcheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="140dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/id_ed_dept"
+                style="@style/LoginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_dept_newcheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/id_ln_dept_newcheck"
+            android:id="@+id/id_ln_room_newcheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6px"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/id_ed_room"
+                style="@style/LoginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_room_newcheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/id_ln_room_newcheck"
+            android:id="@+id/id_ln_principal_newcheck"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6px"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/id_ed_principal"
+                style="@style/LoginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_principal_newcheck" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/id_bt_next"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="@string/string_nextStep"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_bt_login"
+            android:layout_below="@id/id_ln_principal_newcheck"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miko.zd.anquanjianchanative.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_title_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_toolbar"
+        android:background="@color/colorGrayBackground">
+
+        <LinearLayout
+            android:id="@+id/id_ln_username_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="180dp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/id_ed_user"
+                style="@style/LoginEditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_username_login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ln_data"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/id_ln_username_login"
+            android:layout_marginTop="5px"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_tv_year_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColorHint="#CDC5BF"
+                android:hint="@string/text_choose_login"
+                android:textColor="@color/textBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_tv_month_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColorHint="#CDC5BF"
+                android:textColor="@color/textBlack"
+                android:textSize="16sp" />
+            <TextView
+                android:textColor="@color/textBlack"
+                android:id="@+id/id_tv_day_login"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_bt_login"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="@string/string_login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_bt_login"
+            android:layout_below="@id/id_ln_data"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"/>
+    </RelativeLayout>
+</RelativeLayout>

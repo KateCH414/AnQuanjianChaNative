@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="image_scale_type" format="enum">
+            <enum name="fit_xy" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+        </attr>
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightView">
+        <attr name="mhv_HeightRatio" format="reference|float" />
+        <attr name="mhv_HeightDimen" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_weight" format="float" />
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="android:orientation" />
+        <attr name="layoutDirection" format="enum">
+            <enum name="ltr" value="0" />
+            <enum name="rtl" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+        <attr name="weightDefault" format="float" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/vendor_icon"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/vendor_icon"
+            android:layout_width="21dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/vendor_name"
+            style="@style/Ripple"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/vendor_icon"
+            tools:text="同仁堂医药店"
+            android:gravity="center"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/word_midlle"
+            android:layout_marginLeft="9dp"
+            android:layout_marginBottom="3.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tv_checkPeding_time1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendor_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="12sp"
+            android:textColor="@color/word_midlle"
+            tools:text="2017-05-15 15:45" />
+
+        <View
+            android:layout_below="@id/tv_checkPeding_time1"
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            tools:text="待审核"
+            android:textColor="@color/order_status_color"
+            android:textSize="@dimen/text_body" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/checkPending_line"
+        style="@style/Divider.Line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:textColor="@color/word_midlle"
+        android:text="11111"
+        android:id="@+id/chech_time"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/checkPending_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/checkPending_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/word_big"
+            android:layout_toLeftOf="@id/right_arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            tools:text="您的采购单正在审核djflfdl中，请耐心等待"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/tv_checkPeding_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkPending_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/word_midlle"
+            tools:text="2017-05-15 15:45" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/Divider.Line"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sku_list"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
+    <View
+        style="@style/Divider.Line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:id="@+id/tv_realpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/word_big"
+            android:layout_marginLeft="10dp"
+            android:text="实付款：" />
+
+        <TextView
+            android:id="@+id/tv_checkPending_realPay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/tv_realpay"
+            tools:text="¥1000"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/sub_btn_color"/>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/right_btn2"
+                style="@style/Ripple"
+                android:layout_width="85dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bt_checkpending_buyagain"
+                tools:text="再次购买"
+                android:textSize="15sp"
+                android:textColor="@color/sub_btn_color" />
+
+            <TextView
+                android:id="@+id/right_btn1"
+                style="@style/Ripple"
+                android:layout_width="85dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/delete_btn_bg"
+                tools:text="确认收货"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

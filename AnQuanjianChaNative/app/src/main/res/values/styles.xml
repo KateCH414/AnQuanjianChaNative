@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LoginEditStyle">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textCursorDrawable">@drawable/bg_cursor_edittext</item>
+        <item name="android:textColorHint">#CDC5BF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

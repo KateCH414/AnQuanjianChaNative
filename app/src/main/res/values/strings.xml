@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">药京采</string>
+
+
+    <!--购物车-->
+    <string name="no_sku_num">无货</string>
+    <string name="price_down">直降</string>
+    <string name="coupon">优惠券</string>
+    <string name="sku_price">¥ %1$.2f</string>
+    <string name="scan_all_sku">查看其余%1$d件</string>
+    <string name="retract_all_sku">收起其余%1$d件</string>
+    <string name="coupon_use_zone">使用范围:</string>
+    <string name="get">领取</string>
+    <string name="all_select">全选</string>
+    <string name="delete">删除</string>
+    <string name="total">合计：</string>
+    <string name="edit">编辑</string>
+    <string name="complete">完成</string>
+    <string name="submit_txt">结算（%1$d）</string>
+    <string name="no_contain_extra">不含运费</string>
+    <string name="sub_price">减￥%1$s</string>
+    <string name="can_use_price">满%1$s元可用</string>
+    <string name="date_quantum">%1$s—%2$s</string>
+    <string name="coupon_can_use">可用优惠券</string>
+    <string name="coupon_can_get">可领优惠券</string>
+
+    <string name="confirm_receive">确认收货</string>
+    <string name="buy_again">再次购买</string>
+    <string name="to_pay">去支付</string>
+    <string name="url">%1$s?%2$s=%3$s</string>
+    <string name="url_1">%1$s?%2$s=%3$s&amp;%4$s=%5$s</string>
+    <string name="login_status_url">%1$s?wjmpkey=%2$s&amp;to=%3$s</string>
+    <string name="SIgnle">单品页</string>
+    <string name="MoreDetail">更多详情页</string>
+
+</resources>

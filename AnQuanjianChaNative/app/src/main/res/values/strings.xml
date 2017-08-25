@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">安全检查</string>
+    <string name="hint_username_login">请输入您的姓名</string>
+    <string name="text_choose_login">选择日期</string>
+    <string name="string_login">登  录</string>
+    <string name="string_checked_dept">被检单位</string>
+    <string name="title_activity_new_check">NewCheckActivity</string>
+    <string name="string_new_check">新建记录</string>
+    <string name="hint_dept_newcheck">学院</string>
+    <string name="string_nextStep">下一步</string>
+    <string name="hint_room_newcheck">房间</string>
+    <string name="hint_principal_newcheck">负责人</string>
+    <string name="string_hint_newcheck">请输入被检查单位的所属学院，房间号，以及负责人的名称</string>
+    <string name="string_check_item">检查项目</string>
+    <string name="string_create_report">生成报告</string>
+    <string name="string_record">记录</string>
+    <string name="string_checkbox1">符合</string>
+    <string name="string_hint_choose_report">选择符合的等级：</string>
+    <string name="string_checkbox2">不符合</string>
+    <string name="string_checkbox3">不适合</string>
+    <string name="string_complete_report">完成</string>
+    <string name="string_detail_hint_report">请输入详细信息</string>
+    <string name="string_add_photo">添加图片:</string>
+    <string name="string_history">历史记录</string>
+</resources>

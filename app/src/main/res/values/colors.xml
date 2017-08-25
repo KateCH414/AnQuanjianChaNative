@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dominant_color">#C81623</color>  <!--200 22 35-->
+    <color name="background">#F3F3F4</color>  <!--243 243 244-->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucence">#a0000000</color>
+
+    <color name="word_big">#333333</color>  <!--51 51 51-->
+    <color name="word_midlle">#666666</color>   <!--102 102 102-->
+    <color name="word_small">#999999</color>
+
+    <color name="popup_bg">#8f000000</color>
+
+    <color name="checkPending_bg">#F3F3F4</color>
+
+    <color name="separator">#F3F3F4</color>
+    <color name="textColor">#FD5644</color>
+    <color name="bt_login_bg">#C81623</color>
+    <color name="divider_color">#ECECEE</color>
+    <color name="can_use_coupon_txt_color">#1366B5</color>
+
+
+    <color name="sub_btn_color">#C81623</color>
+
+    <color name="line_bg">#CDCDCD</color>
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/couponcommonbody"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:weightSum="3">
+
+    <RelativeLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/couponnormal">
+
+        <TextView
+            android:id="@+id/discunt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="满减200"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/quta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discunt"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="#1366B5"
+            android:layout_centerHorizontal="true"
+            android:text="满800可用" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/coupon_type_bg"
+            android:text="东劵" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/type"
+            android:text="使用范围："
+            android:textColor="#333333"
+
+            android:textSize="14dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/goods_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="仅可购买北京地区商品"
+            android:layout_below="@+id/area"
+            android:textColor="#333333"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/beginTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="2017.1.1-2017.2.2"
+            android:layout_below="@+id/goods_zone"
+            android:layout_marginLeft="10dp"
+            android:textColor="#666666"
+            android:textSize="12dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+
+        >
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:text="使用"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:id="@+id/bt_use"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

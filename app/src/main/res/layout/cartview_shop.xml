@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_cartView_shop"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/detailshopcopy"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rb_cartView_shop"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_cartView_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺名称"
+            android:id="@+id/tv_cartView_shopname"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_cartView_name"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:text="优惠券"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_cartview"
+
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_separator"/>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/rv_cartView_shop"
+        />
+
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+           android:text=" 查看其余N件"
+           android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@drawable/arrowdownwarddark"
+
+            />
+    </RelativeLayout>-->
+    <include layout="@layout/view_separator"/>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/white_corner_bg"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="17sp"
+            android:textColor="#030303"
+            android:paddingTop="18dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="修改购买数量"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@id/sku_pic"
+            android:layout_marginBottom="-1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sub_icon"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/sub_icon"
+                android:padding="7dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:id="@+id/sku_num"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sku_num_bg"
+                android:gravity="center"
+                tools:text="200"
+                android:layout_gravity="center_vertical"
+                android:maxLength="4"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/word_big"
+                android:minWidth="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp" />
+
+            <ImageView
+                android:id="@+id/plus_icon"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/plus_icon"
+                android:padding="7dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            style="@style/Divider.Line"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                style="@style/Ripple"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/word_small"
+                android:text="取消"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/btn_line"
+                android:background="@color/divider_color"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                style="@style/Ripple"
+                android:textSize="@dimen/text_body"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/dominant_color"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

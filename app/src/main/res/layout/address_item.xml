@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|left"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_marginRight="15.5dp"
+            android:layout_marginLeft="14.6dp"
+            android:text="1dddddddddddddddddd1"
+            android:textColor="@color/address_txt_color"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="15.8dp"
+            android:layout_height="10.8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.1dp"
+
+            android:background="@drawable/address_icon_bg"
+
+            />
+
+    </RelativeLayout>
+</FrameLayout>

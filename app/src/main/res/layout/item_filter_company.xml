@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/ic_filter_category_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="北京悦康源通医药有限公司"
+        android:textColor="@color/filter_category_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

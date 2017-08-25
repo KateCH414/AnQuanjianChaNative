@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_category_second_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="二级类目"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/category_second_color"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#ECECEE" />
+
+    </LinearLayout>
+</RelativeLayout>

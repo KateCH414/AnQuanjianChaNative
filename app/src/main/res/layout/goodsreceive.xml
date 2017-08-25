@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/checkPending_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/iconshop"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺名称"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_goodsReceive_shopName"
+            android:text="我的店铺"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/darker_gray"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待发货"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:textColor="@color/textColor"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/view_separator"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_goodsReceive_time"
+            android:text="2017-05-15 15:45"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/view_separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        >
+        <com.jd.yyc.widget.banner.HorizontalRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/iv_check_bg"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/rv_GoodsReceive"
+
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款："
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:id="@+id/tv_goodsReceive_realPay"
+            android:text="¥1000"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:text="再次购买"
+            android:textColor="@color/textColor"
+            android:id="@+id/bt_goodsReceive_buyAgain"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/bt_checkpending_buyagain"
+            />
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:text="确认收货"
+            android:textColor="@android:color/white"
+            android:id="@+id/bt_goodsReceive_Again"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bt_goodsreceive_confirm"
+            />
+
+    </LinearLayout>
+</LinearLayout>

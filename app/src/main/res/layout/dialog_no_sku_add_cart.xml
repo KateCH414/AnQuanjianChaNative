@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/white_corner_bg"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="17sp"
+            android:textColor="#030303"
+            android:paddingTop="18dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="以下商品已经卖光了"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:textSize="12sp"
+            android:textColor="#030303"
+            android:gravity="center"
+            tools:text="先将其他有货商品加入购物车？"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/sku_pic"
+                android:background="@drawable/sku_pic_bg"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                tools:src="@drawable/default_pic"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sku_name"
+                android:layout_alignTop="@id/sku_pic"
+                android:layout_toRightOf="@id/sku_pic"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                tools:text="999 舒肝健胃丸 3g*20袋 标准单位"
+                android:textColor="@color/word_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sku_num"
+                android:layout_toRightOf="@id/sku_pic"
+                android:layout_below="@id/sku_name"
+                android:textSize="12sp"
+                android:textColor="@color/word_small"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="6dp"
+                tools:text="X29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Divider.Line" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/no_add_sku_list"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <View style="@style/Divider.Line" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                style="@style/Ripple"
+                android:textSize="@dimen/text_body"
+                android:textColor="#0076FF"
+                android:text="我在想想"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/btn_line"
+                android:background="@color/separator"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                style="@style/Ripple"
+                android:textSize="@dimen/text_body"
+                android:gravity="center"
+                android:text="加购物车"
+                android:textColor="#0076FF"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_icon"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="127dp"
+        android:paddingBottom="73dp"
+        android:layout_width="44dp"
+        android:src="@drawable/close_circle_icon"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

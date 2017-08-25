@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/dominant_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_mine_totalback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backchevron"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/mine_total_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="我的采购单"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="筛选"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <include layout="@layout/fragment_swipe_recyclerview" />
+
+    </FrameLayout>
+
+</LinearLayout>

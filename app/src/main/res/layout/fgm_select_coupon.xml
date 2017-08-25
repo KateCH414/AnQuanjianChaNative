@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/coupon_txt"
+        android:textColor="@color/word_big"
+        android:gravity="center"
+        android:textSize="@dimen/text_body"
+        android:text="@string/coupon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:padding="10dp"
+        android:src="@drawable/close_icon"
+        android:layout_marginTop="6.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="31.5dp"
+        android:layout_height="31.5dp" />
+
+    <com.jd.yyc.ui.widget.MaxRecyclerView
+        android:id="@+id/coupon_list"
+        android:layout_below="@id/coupon_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
